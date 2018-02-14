@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+:root {
+	--beige-color: #ce9346;
+	--grey-color: #303030;
+}
+
+* {margin: 0 auto; padding: 0 auto;}
+
+;
+body {
+	font-family: 'Noto Serif', serif;
+
+}
+header {
+	position: relative;
+}
+#logo {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50%;
+}
+#slide {
+	width: 100%;
+}
+#menu {
+	position: absolute;
+	top: 70%;
+	left: 12%;
+	right: 12%;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+.menuButton {
+	font-size: 4vw;
+	background: none;
+	padding: 2vw;
+	border: 2px solid white;
+	border-radius: 2vw;
+	color: white;
+	text-decoration: none;
+}
+#overContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#overTextBox {
+	padding: 4vw 8vw 6vw 8vw;
+}
+#imageKlaas {
+	width: 100%;
+}
+#overTextBox h1 {
+	color:  var(--beige-color);
+	font-size: 7vw;
+	padding-bottom: 2vw;
+}
+#overTextBox p {
+	font-size: 5vw;
+	padding-bottom: 2vw;
+}
+#lijnImage {
+	display: none;
+}
+#assortTitle {
+	padding: 4vw 8vw 0 8vw;
+	color:  var(--beige-color);
+	font-size: 7vw;
+}
+#assortContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 2vw 2vw 2vw;
+}
+.assortBox {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	align-items: center;
+}
+#assortBoxExtra {
+	display: none;
+}
+.assortImage {
+	width: 90%;
+	margin: 2vw;
+}
+.assortTextBox {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	color: var(--beige-color);
+}
+.assortTextBox h2, .contactTextBox h2{
+	font-size: 5vw;
+} 
+#vakImage {
+	display: none;
+}
+footer {
+	color: white;
+	background-color: var(--grey-color);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 4vw 4vw 4vw 8vw;
+}
+.contactTextBox {
+	width: calc(50% - 8vw);
+	padding: 4vw;
+}
+.contactTextBox p, #disclaimer{
+	padding-top: 2vw;
+	font-size: 4vw;
+}
+#maps {
+	width: 100%;
+}
+#disclaimer {
+	width: 100%;
+
+}
+
+@media (max-width: 575px) {}
+@media (min-width: 576px) {
+	#overTextBox h1 {
+		font-size: 6vw;
+	}
+	#overTextBox p { 
+		font-size: 3vw;
+	}
+	#assortTitle {
+		font-size: 6vw;
+	}
+	#assortBoxExtra {
+		display: block;
+		width: 50%;
+		margin: 0;
+	}
+}
+@media (min-width: 768px) {
+	#overContainer {
+		flex-direction: row;
+		padding: 2vw;
+	}
+	#overTextBox {
+		margin-right: 2vw;
+		width: 70%;
+		padding: 0 2vw 2vw 2vw;
+	}
+	#overTextBox h1 {
+		font-size: 5vw;
+	}
+	#overTextBox p { 
+		font-size: 20px;
+	}
+	#imageKlaas {
+		width: 30%;
+	}
+	#lijnImage {
+		display: block;
+		position: absolute;
+		z-index: -10;
+		width: 100%;
+		margin-left: -2vw;
+	}
+	#assortTitle {
+		font-size: 5vw;
+		padding: 4vw 0 0 4vw;
+	}
+	.assortBox {
+		width: calc(100%/3);
+	}
+	#assortBoxExtra {
+		display: none;
+	}
+	.assortTextBox h2, .contactTextBox h2 {
+		font-size: 4vw;
+	} 
+	#vakImage {
+		display: block;
+		position: absolute;
+		z-index: -10;
+		width: 100%;
+		margin-top: -15%;
+	}
+	footer {
+		padding: 2vw;
+		margin-top: 13%;
+	}
+	.contactTextBox {
+		width: 20%;
+		padding: 2vw;
+	}
+	.contactTextBox p, #disclaimer{
+		padding-top: 1vw;
+		font-size: 20px;
+	}
+	#disclaimer {
+		padding-left: 4vw;
+	}
+	#maps {
+		width: 40%;
+	}
+}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
